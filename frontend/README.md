@@ -19,7 +19,7 @@ Use este guia somente para a interface web. Para aplicativo Android/iOS, use `mo
 
 Liste variáveis públicas necessárias para a interface. Não coloque segredos no frontend: qualquer variável compilada para o navegador pode ser visualizada pelo usuário.
 
-```tex
+```text
 Instalação: [comando real]
 Execução local: [comando real]
 Build: [comando real]
@@ -35,9 +35,9 @@ Registre os fluxos e estados cobertos: carregando, vazio, sucesso, erro, permiss
 ## Relação com a documentação
 
 - **Documentação acadêmica:** consulte [`docs/README.md`](../docs/README.md).
-- **Protótipos web:** [`docs/artefatos/prototipos/`](../docs/artefatos/prototipos/README.md), quando houver.
-- **Casos de uso:** [`docs/artefatos/casos-de-uso/`](../docs/artefatos/casos-de-uso/README.md), quando forem adequados aos fluxos do projeto.
-- **Plano e evidências de testes:** [`docs/artefatos/testes/`](../docs/artefatos/testes/README.md), quando aplicável.
+- **Protótipos web:** [`docs/prototipos/`](../docs/prototipos/README.md), quando houver.
+- **Casos de uso:** [`docs/casos-de-uso/`](../docs/casos-de-uso/README.md), quando forem adequados aos fluxos do projeto.
+- **Plano e evidências de testes:** [`docs/testes/`](../docs/testes/README.md), quando aplicável.
 
 ## Exemplo preenchido (fictício; stack ilustrativa)
 
@@ -50,7 +50,7 @@ Registre os fluxos e estados cobertos: carregando, vazio, sucesso, erro, permiss
 
 Exemplos de comandos, somente se definidos no `package.json`:
 
-```tex
+```text
 npm ci
 npm run dev
 npm run build

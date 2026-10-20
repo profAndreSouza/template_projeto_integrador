@@ -29,7 +29,7 @@ flowchart LR
     Mobile --> API
     API --> Dados
     API -. integração, se prevista .-> Servico
-
+```
 
 **Legenda do exemplo:** a figura representa apenas uma possibilidade. Se web ou mobile não fizer parte do projeto, retire o elemento. Se o aplicativo funcionar sem conexão, indicar quais operações são locais e como ocorre a sincronização, caso isso esteja definido nos requisitos.
 

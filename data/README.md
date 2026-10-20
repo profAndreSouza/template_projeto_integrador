@@ -22,7 +22,7 @@ Não versionar bases completas de clientes, dados pessoais, prontuários, creden
 
 ## Relação com o restante do projeto
 
-Relacione fontes e transformações aos requisitos, perguntas de pesquisa, serviços, interfaces e testes apenas quando a relação existir. Consulte [`docs/artefatos/dados/`](../docs/artefatos/dados/README.md), [`docs/artefatos/requisitos/`](../docs/artefatos/requisitos/README.md) e [`docs/artefatos/testes/`](../docs/artefatos/testes/).
+Relacione fontes e transformações aos requisitos, perguntas de pesquisa, serviços, interfaces e testes apenas quando a relação existir. Consulte [`docs/der/`](../docs/der/README.md), [`docs/requisitos/`](../docs/requisitos/README.md) e [`docs/testes/`](../docs/testes/).
 
 ## Exemplo preenchido (fictício)
 

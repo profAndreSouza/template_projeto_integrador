@@ -59,7 +59,7 @@ Registre a contribuição de cada integrante por atividade ou conjunto de evidê
 
 | Item | Classificação | Situação inicial → atual | Trabalho desenvolvido neste período | Evidência/localização | Validação/resultado |
 |---|---|---|---|---|---|
-| Cadastro de materiais | herdado e mantido | implementado → implementado | preservado; revisão de campos | `backend/material/`; commit `a1b2c3d` fictício | teste de regressão documentado em `docs/artefatos/testes/` |
+| Cadastro de materiais | herdado e mantido | implementado → implementado | preservado; revisão de campos | `backend/material/`; commit `a1b2c3d` fictício | teste de regressão documentado em `docs/testes/` |
 | Pedido de material | herdado e alterado | protótipo → implementação parcial | gravação e estado inicial adicionados | `backend/pedidos/`, `frontend/pedidos/`; PR fictício #12 | cenário local passou; aceite do cliente pendente |
 | Aprovação por perfil | novo | não existia → planejado | requisito e protótipo definidos | RF-008 e `DEC-002` fictícios | ainda não implementado |
 

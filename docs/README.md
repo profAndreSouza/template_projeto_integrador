@@ -1,51 +1,54 @@
 # Documentação do projeto
 
-Use esta pasta para os documentos acadêmicos e os artefatos de engenharia que ajudem a explicar, construir ou avaliar o projeto. Consulte o [template institucional de TG](TG-Template-ADS-formato-academico%201-v1.docx) e siga as orientações atuais da disciplina. Não transforme todos os exemplos desta estrutura em entregáveis obrigatórios: mantenha somente os que fizerem sentido para o problema e para a etapa.
+Esta pasta reúne o documento acadêmico e os registros que explicam requisitos, modelos, decisões, continuidade e validação do projeto. Consulte o [template institucional de TG](TG-Template-ADS-formato-academico%201-v1.docx) e siga as orientações da disciplina. As subpastas são opcionais: mantenha as que forem úteis e não crie documentação apenas para preencher a estrutura.
 
 ## Documento acadêmico
 
-- Mantenha a versão editável e a exportação em PDF quando esses arquivos fizerem parte da entrega.
-- Registre a data ou versão das cópias para que seja possível saber se DOCX e PDF correspondem ao mesmo conteúdo.
-- Preserve a estrutura e a nomenclatura do template institucional; confirme dúvidas de interpretação com a orientação.
-- Não use o README ou os modelos de engenharia como substitutos da monografia.
+Mantenha aqui a versão de trabalho da monografia (`tg.docx`) e a exportação em PDF (`tg.pdf`), se esses arquivos fizerem parte da entrega. Registre a data ou versão para indicar que as cópias correspondem ao mesmo conteúdo. Preserve a estrutura e os títulos do template institucional; confirme dúvidas de interpretação com a orientação. Os modelos de engenharia desta pasta complementam o trabalho acadêmico, mas não o substituem.
 
-**Exemplo fictício:** `tg.docx` é a versão de trabalho atualizada em 2026-10-20 e `tg.pdf` é a exportação feita na mesma data. A equipe registra os capítulos ainda em redação no controle do projeto, sem afirmar que estão concluídos.
+**Exemplo fictício:** `tg.docx` é a versão de trabalho atualizada em 2026-10-20 e `tg.pdf` é a exportação feita na mesma data. Os capítulos em redação permanecem identificados como em andamento.
 
-## Artefatos de engenharia
+## Para que serve cada subpasta
 
-Os modelos ficam organizados por assunto. Copie e adapte somente os que forem úteis.
+| Subpasta | Para que serve | Exemplos de conteúdo |
+|---|---|---|
+| [`requisitos/`](requisitos/README.md) | Registrar necessidades, comportamento esperado, qualidades e regras confirmadas do produto. | Requisitos funcionais e não funcionais, regras de negócio, critérios de aceite e rastreabilidade. |
+| [`casos-de-uso/`](casos-de-uso/README.md) | Descrever objetivos de atores e interações com o sistema quando esse tipo de modelo for adequado. | Diagrama conceitual, especificações de fluxo principal, alternativas e exceções realmente definidas. |
+| [`der/`](der/README.md) | Documentar dados persistidos e sua estrutura quando o projeto usar armazenamento de dados que se beneficie dessa modelagem. | DER, dicionário de dados, entidades, atributos, chaves e relacionamentos. Para dados não relacionais, documente o esquema pertinente sem forçar um DER relacional. |
+| [`arquitetura/`](arquitetura/README.md) | Explicar a organização técnica e as responsabilidades dos componentes relevantes. | Visão arquitetural, diagramas de classes ou outros modelos necessários para compreender a solução. |
+| [`prototipos/`](prototipos/README.md) | Comunicar e avaliar fluxos ou interfaces antes ou durante a implementação. | Protótipos web, telas móveis, estados de interface e decisões de interação. |
+| [`testes/`](testes/README.md) | Planejar e registrar verificações técnicas ou avaliações pertinentes ao método do projeto. | Casos de teste, ambiente, resultados observados, evidências e avaliação com pessoas quando aplicável. |
+| [`decisoes/`](decisoes/README.md) | Registrar decisões que afetam escopo, arquitetura, dados, integração ou evolução, incluindo contexto e consequências. | Decisões aceitas, rejeitadas ou substituídas e seus motivos. |
+| [`continuidade/`](continuidade/README.md) | Distinguir a linha de base recebida de semestres anteriores do que foi alterado, criado, validado ou descontinuado nesta etapa. | Inventário de contribuições, comparação de versões e registro de evolução. |
+| [`backlog/`](backlog/README.md) | Explicar alternativas de organização do trabalho quando um Product Backlog não se ajustar ao projeto. | Orientações para plano de pesquisa, catálogo de dados, migração ou outro instrumento. O backlog em Markdown, se adotado, fica em [`../PRODUCT-BACKLOG.md`](../PRODUCT-BACKLOG.md). |
 
-| Pasta | Conteúdo possível |
-|---|---|
-| [`artefatos/requisitos/`](artefatos/requisitos/README.md) | requisitos funcionais/não funcionais e regras confirmadas |
-| [`artefatos/casos-de-uso/`](artefatos/casos-de-uso/README.md) | objetivos dos atores e especificações de fluxos, quando adequados ao sistema |
-| [`artefatos/dados/`](artefatos/dados/README.md) | DER, dicionário e estrutura persistida, se houver dados estruturados |
-| [`artefatos/arquitetura/`](artefatos/arquitetura/README.md) | visão arquitetural e classes, conforme necessidade |
-| [`artefatos/prototipos/`](artefatos/prototipos/README.md) | protótipos web, mobile ou de outros pontos de interação |
-| [`artefatos/testes/`](artefatos/testes/README.md) | roteiro de testes técnicos, avaliação e evidências pertinentes |
+As relações entre pastas são opcionais. Por exemplo, um requisito pode ser associado a um caso de uso, protótipo, parte da aplicação e teste quando essas relações existirem. Não exija que todo requisito gere uma tabela, classe, endpoint ou tela.
 
-Projetos de pesquisa, análise de dados, API sem interface, integração, automação ou evolução de sistema legado podem usar outros artefatos. Registre a justificativa quando um modelo não se aplicar; não crie tabelas, telas ou diagramas apenas para preencher a pasta.
+## Como escolher o que manter
 
-## Backlog, decisões e continuidade
+- Projetos com interação de pessoas podem usar requisitos, casos de uso e protótipos.
+- Projetos que persistem dados estruturados podem usar `der/`; não é necessário criar DER para projeto sem persistência relacional adequada.
+- Projetos com web e mobile podem guardar protótipos e validações por plataforma, destacando diferenças relevantes.
+- Pesquisa, análise de dados, automação, API sem interface, integração ou evolução de sistema legado podem usar outros documentos e justificar a não aplicabilidade dos modelos.
+- Dados de clientes, credenciais e informações pessoais não devem ser expostos nos artefatos. Prefira exemplos sintéticos e referências a locais protegidos quando necessário.
 
-- [`backlog/`](backlog/README.md): use um Product Backlog se a equipe trabalha com uma lista ordenada de produto; projetos de pesquisa e dados podem escolher um plano ou catálogo mais adequado.
-- [`decisoes/`](decisoes/README.md): registre decisões importantes de escopo, dados, arquitetura, segurança ou integração.
-- [`continuidade/`](continuidade/README.md): compare a linha de base recebida com as contribuições do semestre atual.
+## Estrutura sugerida
 
-## Organização atual
-
-```tex
+```text
 docs/
 ├── TG-Template-ADS-formato-academico 1-v1.docx
-├── tg.docx                         # adicionar se fizer parte da entrega
-├── tg.pdf                          # adicionar exportação correspondente
+├── tg.docx                         # versão da equipe, se aplicável
+├── tg.pdf                          # exportação correspondente, se aplicável
 ├── README.md
-├── artefatos/
-├── backlog/
-├── decisoes/
-└── continuidade/
+├── requisitos/                     # especificação e rastreabilidade
+├── casos-de-uso/                   # objetivos e fluxos, se aplicável
+├── der/                            # modelo e dicionário de dados, se aplicável
+├── arquitetura/                    # visões e classes pertinentes
+├── prototipos/                     # interfaces e fluxos, se aplicável
+├── testes/                         # plano e evidências de validação
+├── decisoes/                       # decisões técnicas e de escopo
+├── continuidade/                   # linha de base e evolução entre etapas
+└── backlog/                        # orientação ou alternativa de planejamento
+```
 
-
-## Exemplo de uso
-
-Uma equipe com aplicativo móvel, painel web e API mantém os requisitos, casos de uso e protótipos em `artefatos/`, descreve a instalação nos READMEs dos componentes e registra os cenários de teste. Uma equipe de analytics pode manter proveniência, dicionário de dados e reprodução dos cálculos em `data/` e referenciá-los na monografia. Estes são exemplos; a organização final deve refletir o projeto real.
+**Exemplo de uso:** uma equipe com aplicativo móvel, painel web e API mantém requisitos e casos de uso em suas pastas, protótipos identificados por plataforma e testes com resultados observados. Uma equipe de análise de dados pode manter fontes e métodos em `data/` na raiz do repositório, registrar conceitos de dados pertinentes em `der/` e documentar os resultados na monografia.

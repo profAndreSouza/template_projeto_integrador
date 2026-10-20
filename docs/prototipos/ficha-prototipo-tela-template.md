@@ -18,7 +18,7 @@ Insira a imagem ou link acessível do protótipo e registre sua versão. Para in
 
 ### Exemplo fictício — esboço adaptável
 
-```tex
+```text
 WEB                         APLICATIVO MÓVEL
 +----------------------+    +----------------+
 | Nome do projeto      |    | Projeto        |
@@ -27,7 +27,7 @@ WEB                         APLICATIVO MÓVEL
 | Resultado B          |    | Resultado B    |
 +----------------------+    | [Detalhes]     |
                             +----------------+
-
+```
 
 Este esboço mostra apenas uma possível organização de uma função de consulta. Remova o formato que não pertence ao projeto. Não representa uma exigência de que as versões web e móvel tenham interfaces iguais.
 

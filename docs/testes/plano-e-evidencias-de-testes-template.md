@@ -33,14 +33,14 @@ Inclua fluxos alternativos ou de erro quando forem requisitos ou riscos relevant
 
 Ao executar, registre data, versão/commit, ambiente, comando ou passos, resultado real e localização da evidência. Remova ou anonimize dados pessoais, credenciais e dados do cliente.
 
-```tex
+```text
 Exemplo de registro ainda não executado:
 Data: não executado
 Versão: a definir
 Ambiente: a definir
 Resultado: não há resultado observado
 Evidência: nenhuma
-
+```
 
 Para testes automatizados, cole a saída real ou indique o arquivo/relatório gerado. Não use uma saída simulada como evidência.
 

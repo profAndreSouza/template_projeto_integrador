@@ -38,7 +38,7 @@ erDiagram
     USUARIO ||--o{ CONTEUDO : "cria"
     USUARIO ||--o{ AVALIACAO : "realiza"
     CONTEUDO ||--o{ AVALIACAO : "recebe"
-
+```
 
 <div align="center">
 <sub><b>Fonte:</b> Autor. (Tamanho 10 no rodapé da figura).</sub>

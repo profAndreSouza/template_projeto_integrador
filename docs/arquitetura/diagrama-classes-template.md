@@ -35,7 +35,7 @@ classDiagram
         -datetime publicadoEm
         +submeterParaAprovacao() void
         +publicar() void
-        +calcularMediaAvaliacao() floa
+        +calcularMediaAvaliacao() float
     }
 
     class Avaliacao {
@@ -50,7 +50,7 @@ classDiagram
     Usuario "1" --> "0..*" Conteudo : cria
     Usuario "1" --> "0..*" Avaliacao : registra
     Conteudo "1" *-- "0..*" Avaliacao : compõe
-
+```
 
 <div align="center">
 <sub><b>Fonte:</b> Autor. (Tamanho 10 no rodapé da figura).</sub>

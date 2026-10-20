@@ -8,7 +8,7 @@ Adapte ou escolha outro instrumento quando o projeto for principalmente pesquisa
 
 ## Como registrar itens
 
-Use `product-backlog.csv` como ponto de partida. Cada item deve ter identificador estável, descrição curta, prioridade, estado, critério de aceite e origem/justificativa. Reordene com a equipe e o cliente conforme as decisões. Evite prioridade numérica sem critério acordado; rótulos como `Alta`, `Média` e `Baixa` também precisam de uma definição simples.
+O arquivo [`PRODUCT-BACKLOG.md`](../../PRODUCT-BACKLOG.md) na raiz é o modelo principal em Markdown. Se a equipe preferir uma planilha, pode usar `product-backlog.csv` como alternativa; mantenha uma única fonte principal para evitar divergências. Cada item deve ter identificador estável, descrição curta, prioridade, estado, critério de aceite e origem/justificativa. Reordene a lista conforme as decisões da equipe e do cliente.
 
 Um item pode representar requisito, história, defeito, pesquisa técnica ou tarefa. Nem todo item gera endpoint, tabela, classe ou tela. Quando um item não se aplica ao produto atual, registre a decisão e o motivo.
 

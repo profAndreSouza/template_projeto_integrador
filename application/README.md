@@ -1,46 +1,56 @@
-# Integração, empacotamento e implantação (opcional)
+# Aplicação full stack
 
-Use esta pasta para scripts e configurações que integrem ou iniciem componentes, como Compose, configuração de ambiente local, empacotamento ou implantação. Ela é opcional. Mantenha o código-fonte do app Android/iOS em `mobile/`; descreva a comunicação com backend ou serviços externos nos READMEs dos componentes envolvidos.
+Use esta pasta quando a aplicação web e o backend forem desenvolvidos e mantidos como uma unidade integrada. Ela pode conter subpastas para interface e servidor, por exemplo. Explique a estrutura real abaixo. Se backend e frontend forem componentes separados, documente-os em `backend/` e `frontend/` na raiz. Um app móvel com código e build próprios fica em `mobile/`.
 
-## O que vive aqui
+## Estrutura e responsabilidades
 
-- **Tipo:** [integração / empacotamento / implantação / outro]
-- **Componentes coordenados:** [backend, web, mobile, dados, banco, serviços]
-- **Ambientes suportados:** [local / homologação / outro]
+| Caminho | Responsabilidade | Tecnologia/versão |
+|---|---|---|
+| `frontend/` ou caminho real | Exemplo: interface web da aplicação | A preencher |
+| `backend/` ou caminho real | Exemplo: regras do servidor e acesso a dados | A preencher |
+| `mobile/` na raiz, se existir | Aplicativo móvel separado, que pode consumir os serviços desta aplicação | A preencher |
 
-## Pré-requisitos e configuração
+**Exemplo fictício:** `application/web/` contém a interface React e `application/api/` contém o serviço Node.js. O app Android fica em `mobile/` porque possui ciclo de build separado. Substitua essa organização pelo código efetivo do projeto.
 
-[Liste versões de ferramentas, serviços necessários e configuração. Nunca inclua credenciais reais.]
+## Pré-requisitos
+
+Liste linguagens, runtimes, ferramentas, serviços, versões suportadas e como verificar cada uma. Diferencie o que é necessário para desenvolver do que é necessário para executar a aplicação.
+
+| Ferramenta ou serviço | Versão utilizada | Como verificar |
+|---|---|---|
+| Exemplo: runtime da aplicação | A preencher pela equipe | Comando real do projeto |
+| Exemplo: banco/serviço externo | A preencher ou não aplicável | Procedimento real |
+
+## Configuração segura
+
+Documente variáveis necessárias, seus propósitos e valores fictícios em arquivo `.env.example`. Mantenha `.env` local fora do Git. Não inclua credenciais, chaves, tokens ou dados reais do cliente.
 
 ## Instalação, execução e validação
 
-```tex
-Instalação: [comando real]
-Execução: [comando real]
-Testes/checks: [comando real]
+Registre comandos testados para instalar dependências, preparar dados, iniciar a aplicação, executar verificações e encerrar processos. Informe se a execução exige iniciar mais de um serviço.
 
+Exemplo fictício de comandos; use somente quando existirem scripts equivalentes no projeto:
 
-Descreva a ordem de inicialização dos componentes, portas/URLs locais, dados fictícios, logs esperados e como encerrar/limpar o ambiente de desenvolvimento.
+    npm install
+    npm run dev
+    npm test
 
-## Vínculo com a Documentação Acadêmica (TG)
+## Configuração integrada (se aplicável)
 
-- **Documentação acadêmica e de execução:** consulte [`docs/README.md`](../docs/README.md) e os guias de cada componente; registre neste diretório somente instruções e configurações de integração/implantação que realmente existam.
-- **Visão Arquitetural do Sistema Integrado:** [`docs/artefatos/arquitetura/visao-arquitetural-template.md`](../docs/artefatos/arquitetura/visao-arquitetural-template.md)
+Se houver configuração para iniciar múltiplos componentes juntos, como Docker Compose, documente-a aqui. Não é necessário criar uma camada de orquestração para uma aplicação simples.
 
-## Exemplo preenchido (fictício)
+**Exemplo fictício:** quando houver um `compose.yaml` configurado e testado:
 
-> Exemplo de camada de integração de um sistema com interface web, aplicativo móvel, backend e banco local. `application/` é opcional; mantenha-o somente se houver configuração ou scripts que coordenem componentes.
+    docker compose up --build
+    docker compose down
 
-- **Tipo:** execução integrada local com Docker Compose.
-- **Componentes coordenados:** frontend web, aplicativo móvel, API e banco de desenvolvimento.
-- **Ambiente:** somente local, com dados sintéticos.
-- **Pré-requisito:** Docker Compose instalado; não há credenciais reais no exemplo.
+## Relação com outras pastas
 
-Exemplo de execução, válido apenas se existir um `compose.yaml` equivalente no projeto:
+- **App móvel independente:** [`mobile/README.md`](../mobile/README.md), se existir.
+- **Dados, análises ou pipelines:** [`data/README.md`](../data/README.md), se aplicável.
+- **Documentação acadêmica e artefatos:** [`docs/README.md`](../docs/README.md).
+- **Backlog do produto:** [`PRODUCT-BACKLOG.md`](../PRODUCT-BACKLOG.md), se adotado.
 
-```tex
-docker compose up --build
-docker compose down
+## Exemplo de estado (fictício)
 
-
-Exemplo de evidência: “A interface web e o aplicativo móvel acessaram a API local com dados sintéticos no commit fictício `a1b2c3d`; isso não comprova homologação ou implantação em produção.” Registre apenas execuções realizadas de fato.
+“A aplicação full stack é executada localmente com dados sintéticos. Os testes do fluxo de consulta foram planejados, mas ainda não executados. A equipe atualizará este trecho quando houver evidência reproduzível.” Não use o exemplo como comprovação do estado real.

@@ -25,7 +25,7 @@ Registre diferenças relevantes entre execução em emulador e dispositivo. List
 
 Descreva as variáveis de configuração e mantenha exemplos sem credenciais reais. Não embuta tokens, chaves privadas ou senhas no aplicativo: valores distribuídos no pacote podem ser extraídos.
 
-```tex
+```text
 Instalação de dependências: [comando realmente usado]
 Execução em emulador/dispositivo: [comando realmente usado]
 Build local: [comando realmente usado]
@@ -67,7 +67,7 @@ Liste cenários executados separadamente por plataforma, emulador ou dispositivo
 - **Comunicação:** API local de desenvolvimento; dados sintéticos.
 - **Estado:** em desenvolvimento; sem publicação em loja.
 
-```tex
+```text
 flutter pub ge
 flutter run
 flutter tes

@@ -30,10 +30,11 @@ Liste as variáveis necessárias sem colocar valores reais:
 
 ## Instalar, executar e testar
 
-```tex
+```text
 Instalação: [comando real]
 Execução local: [comando real]
 Testes: [comando real]
+```
 
 
 Indique porta, URL local, migrações, usuário de teste fictício e comportamento esperado. Registre a última execução verificada: ambiente, commit, data e resultado. Se ainda não houver comando executável, declare isso.
@@ -44,9 +45,9 @@ Link para OpenAPI/contrato: [caminho ou N/A]. Descreva autenticação, autoriza�
 
 ## Vínculo com a Documentação Acadêmica (TG)
 
-- **Modelagem de Dados e DER (Cap. 2.5):** [`docs/artefatos/dados/`](../docs/artefatos/dados/README.md)
-- **Diagrama de Classes e Arquitetura (Cap. 2.5):** [`docs/artefatos/arquitetura/`](../docs/artefatos/arquitetura/README.md)
-- **Plano de Testes e Evidências (Cap. 4):** [`docs/artefatos/testes/`](../docs/artefatos/testes/README.md)
+- **Modelagem de Dados e DER (Cap. 2.5):** [`docs/der/`](../docs/der/README.md)
+- **Diagrama de Classes e Arquitetura (Cap. 2.5):** [`docs/arquitetura/`](../docs/arquitetura/README.md)
+- **Plano de Testes e Evidências (Cap. 4):** [`docs/testes/`](../docs/testes/README.md)
 - **Documentação do projeto:** [`docs/README.md`](../docs/README.md)
 
 ## Exemplo preenchido (fictício; comandos dependem do projeto)
@@ -64,17 +65,19 @@ Link para OpenAPI/contrato: [caminho ou N/A]. Descreva autenticação, autoriza�
 
 Exemplo de configuração (valores fictícios; senha omitida):
 
-```tex
+```text
 DATABASE_URL=postgresql://[usuario]:[senha]@localhost:5432/estoque_dev
+```
 
 
 Exemplo de comandos para um projeto que tenha `requirements.txt`, `app.main` e esses scripts:
 
-```tex
+```text
 python -m venv .venv
-pip install -r requirements.tx
+pip install -r requirements.txt
 uvicorn app.main:app --reload
-pytes
+pytest
+```
 
 
 Em um repositório real, registre a saída esperada e a última execução efetivamente realizada. Estes comandos são apenas ilustrativos e não foram executados neste template.
